@@ -12,9 +12,10 @@
 		CB37F14623F7758D007870BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB37F14423F7758D007870BB /* Main.storyboard */; };
 		CB37F14823F77591007870BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB37F14723F77591007870BB /* Assets.xcassets */; };
 		CB37F14B23F77591007870BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB37F14923F77591007870BB /* LaunchScreen.storyboard */; };
-		CB37F15623F77A5B007870BB /* Races.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37F15523F77A5B007870BB /* Races.swift */; };
 		CB37F15D23F7A772007870BB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37F15C23F7A772007870BB /* WelcomeViewController.swift */; };
 		CB37F15F23F7A9E3007870BB /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37F15E23F7A9E3007870BB /* FormViewController.swift */; };
+		CB37F16123F7AD23007870BB /* Races.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37F16023F7AD23007870BB /* Races.swift */; };
+		CB37F16323F7B559007870BB /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37F16223F7B559007870BB /* SuccessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +26,10 @@
 		CB37F14723F77591007870BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB37F14A23F77591007870BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB37F14C23F77592007870BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB37F15523F77A5B007870BB /* Races.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Races.swift; path = "../../../../Downloads/App Assets 2/Races.swift"; sourceTree = "<group>"; };
 		CB37F15C23F7A772007870BB /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		CB37F15E23F7A9E3007870BB /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		CB37F16023F7AD23007870BB /* Races.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Races.swift; sourceTree = "<group>"; };
+		CB37F16223F7B559007870BB /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +75,7 @@
 		CB37F15323F779FA007870BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CB37F15523F77A5B007870BB /* Races.swift */,
+				CB37F16023F7AD23007870BB /* Races.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,6 +95,7 @@
 			children = (
 				CB37F15C23F7A772007870BB /* WelcomeViewController.swift */,
 				CB37F15E23F7A9E3007870BB /* FormViewController.swift */,
+				CB37F16223F7B559007870BB /* SuccessViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -170,9 +173,10 @@
 			files = (
 				CB37F13F23F7758D007870BB /* AppDelegate.swift in Sources */,
 				CB37F15D23F7A772007870BB /* WelcomeViewController.swift in Sources */,
+				CB37F16123F7AD23007870BB /* Races.swift in Sources */,
 				CB37F14123F7758D007870BB /* SceneDelegate.swift in Sources */,
+				CB37F16323F7B559007870BB /* SuccessViewController.swift in Sources */,
 				CB37F15F23F7A9E3007870BB /* FormViewController.swift in Sources */,
-				CB37F15623F77A5B007870BB /* Races.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
