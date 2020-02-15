@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-839" y="51"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome-->
         <scene sceneID="a5w-zP-TeL">
             <objects>
                 <viewController id="eiz-bQ-x13" sceneMemberID="viewController">
@@ -48,7 +48,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wUh-yO-oPi"/>
                     </view>
-                    <navigationItem key="navigationItem" id="yAw-8Z-p5f"/>
+                    <navigationItem key="navigationItem" title="Welcome" id="yAw-8Z-p5f"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bT3-0w-oMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
