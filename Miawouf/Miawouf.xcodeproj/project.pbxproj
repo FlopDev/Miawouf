@@ -13,6 +13,8 @@
 		CB37F14823F77591007870BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB37F14723F77591007870BB /* Assets.xcassets */; };
 		CB37F14B23F77591007870BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB37F14923F77591007870BB /* LaunchScreen.storyboard */; };
 		CB37F15623F77A5B007870BB /* Races.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37F15523F77A5B007870BB /* Races.swift */; };
+		CB37F15D23F7A772007870BB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37F15C23F7A772007870BB /* WelcomeViewController.swift */; };
+		CB37F15F23F7A9E3007870BB /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37F15E23F7A9E3007870BB /* FormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CB37F14A23F77591007870BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB37F14C23F77592007870BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB37F15523F77A5B007870BB /* Races.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Races.swift; path = "../../../../Downloads/App Assets 2/Races.swift"; sourceTree = "<group>"; };
+		CB37F15C23F7A772007870BB /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		CB37F15E23F7A9E3007870BB /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +64,10 @@
 				CB37F14023F7758D007870BB /* SceneDelegate.swift */,
 				CB37F14C23F77592007870BB /* Info.plist */,
 				CB37F15323F779FA007870BB /* Model */,
-				CB37F15223F775FA007870BB /* Controller */,
+				CB37F15B23F7A75B007870BB /* Controller */,
 				CB37F15423F77A03007870BB /* View */,
 			);
 			path = Miawouf;
-			sourceTree = "<group>";
-		};
-		CB37F15223F775FA007870BB /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		CB37F15323F779FA007870BB /* Model */ = {
@@ -89,6 +86,15 @@
 				CB37F14923F77591007870BB /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CB37F15B23F7A75B007870BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB37F15C23F7A772007870BB /* WelcomeViewController.swift */,
+				CB37F15E23F7A9E3007870BB /* FormViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB37F13F23F7758D007870BB /* AppDelegate.swift in Sources */,
+				CB37F15D23F7A772007870BB /* WelcomeViewController.swift in Sources */,
 				CB37F14123F7758D007870BB /* SceneDelegate.swift in Sources */,
+				CB37F15F23F7A9E3007870BB /* FormViewController.swift in Sources */,
 				CB37F15623F77A5B007870BB /* Races.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

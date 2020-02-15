@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zb8-Rg-ryd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -15,6 +15,9 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.63067048790000002" green="0.33167493339999998" blue="0.53335028890000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.31500285859999999" green="0.59805387259999998" blue="0.67844563719999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="eiz-bQ-x13" kind="relationship" relationship="rootViewController" id="b1e-nN-bjH"/>
@@ -27,7 +30,7 @@
         <!--Welcome-->
         <scene sceneID="a5w-zP-TeL">
             <objects>
-                <viewController id="eiz-bQ-x13" sceneMemberID="viewController">
+                <viewController id="eiz-bQ-x13" customClass="WelcomeViewController" customModule="Miawouf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NTO-OB-VOU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,16 +38,20 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Miawouf" translatesAutoresizingMaskIntoConstraints="NO" id="Bod-FY-VAZ">
                                 <rect key="frame" x="89.5" y="128" width="235" height="67"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paw" translatesAutoresizingMaskIntoConstraints="NO" id="mad-vK-W5q">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6NE-9I-7xa">
                                 <rect key="frame" x="86" y="333.5" width="242" height="229"/>
-                            </imageView>
+                                <state key="normal" image="Paw"/>
+                                <connections>
+                                    <segue destination="TPA-4d-nck" kind="show" id="1jC-c3-2sb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.82894331219999995" green="0.93595826630000001" blue="0.99216729400000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Bod-FY-VAZ" firstAttribute="centerX" secondItem="NTO-OB-VOU" secondAttribute="centerX" id="A4Z-yD-3jf"/>
-                            <constraint firstItem="mad-vK-W5q" firstAttribute="centerY" secondItem="NTO-OB-VOU" secondAttribute="centerY" id="aXq-kR-g7Q"/>
                             <constraint firstItem="Bod-FY-VAZ" firstAttribute="top" secondItem="wUh-yO-oPi" secondAttribute="top" constant="40" id="rCL-WL-bWm"/>
-                            <constraint firstItem="mad-vK-W5q" firstAttribute="centerX" secondItem="NTO-OB-VOU" secondAttribute="centerX" id="rOi-ho-Eyw"/>
+                            <constraint firstItem="6NE-9I-7xa" firstAttribute="centerX" secondItem="NTO-OB-VOU" secondAttribute="centerX" id="vou-d8-scM"/>
+                            <constraint firstItem="6NE-9I-7xa" firstAttribute="centerY" secondItem="NTO-OB-VOU" secondAttribute="centerY" id="w83-hI-YWg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wUh-yO-oPi"/>
                     </view>
@@ -53,6 +60,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bT3-0w-oMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-117.39130434782609" y="49.553571428571423"/>
+        </scene>
+        <!--Form View Controller-->
+        <scene sceneID="vhc-7k-EOR">
+            <objects>
+                <viewController id="TPA-4d-nck" customClass="FormViewController" customModule="Miawouf" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wuM-iu-Kl4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOz-lX-xnB">
+                                <rect key="frame" x="31" y="812.5" width="352" height="49.5"/>
+                                <color key="backgroundColor" red="0.63067048790000002" green="0.33167493339999998" blue="0.53335028890000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Valider">
+                                    <color key="titleColor" red="0.82894331219999995" green="0.93595826630000001" blue="0.99216729400000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78573524949999995" green="0.88899087909999996" blue="0.94118630889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="KOz-lX-xnB" firstAttribute="centerX" secondItem="wuM-iu-Kl4" secondAttribute="centerX" id="9Dz-Wo-zoc"/>
+                            <constraint firstItem="KOz-lX-xnB" firstAttribute="height" secondItem="wuM-iu-Kl4" secondAttribute="height" multiplier="0.055" id="KTh-CX-KrR"/>
+                            <constraint firstItem="KOz-lX-xnB" firstAttribute="width" secondItem="wuM-iu-Kl4" secondAttribute="width" multiplier="0.85" id="Lfx-0J-ecu"/>
+                            <constraint firstItem="KOz-lX-xnB" firstAttribute="bottom" secondItem="kLG-ab-9fZ" secondAttribute="bottom" id="xXO-Y7-3Sg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kLG-ab-9fZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cab-Sb-qbX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7i-fh-Qbp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="605" y="49"/>
         </scene>
     </scenes>
     <resources>
